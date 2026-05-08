@@ -47,7 +47,7 @@ export default function Skills() {
 
   return (
     <div className="max-w-6xl mx-auto px-4 py-16">
-      <h1 className="text-4xl font-extrabold text-industrial-grey mb-4 border-b-4 border-iron-lemon inline-block pb-2">Qualifikationsmatrix (Competency Matrix)</h1>
+      <h1 className="text-4xl font-extrabold text-industrial-grey mb-4 border-b-4 border-iron-lemon inline-block pb-2"><T id="skills.title">Professional Skills Matrix</T></h1>
       <p className="text-xl text-gray-600 mb-12">Targeted technical capabilities aligning academic statistics with the SAP-driven German enterprise logistics environment.</p>
       
       <div className="space-y-12">

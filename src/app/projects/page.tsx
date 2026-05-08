@@ -30,7 +30,7 @@ export default function Projects() {
 
   return (
     <div className="max-w-6xl mx-auto px-4 py-16">
-      <h1 className="text-4xl font-extrabold text-industrial-grey mb-4 border-b-4 border-iron-lemon inline-block pb-2">Die Dritte Seite (Qualifikationsprofil)</h1>
+      <h1 className="text-4xl font-extrabold text-industrial-grey mb-4 border-b-4 border-iron-lemon inline-block pb-2"><T id="projects.title">Project Portfolio (Dritte Seite)</T></h1>
       <p className="text-xl text-gray-600 mb-12">Proof of Concept: Translating theoretical statistics into corporate logistics value.</p>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">

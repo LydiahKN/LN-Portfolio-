@@ -42,7 +42,7 @@ export default function Credentials() {
 
   return (
     <div className="max-w-4xl mx-auto px-4 py-16">
-      <h1 className="text-4xl font-extrabold text-industrial-grey mb-4 border-b-4 border-iron-lemon inline-block pb-2">Academic & Professional Timeline</h1>
+      <h1 className="text-4xl font-extrabold text-industrial-grey mb-4 border-b-4 border-iron-lemon inline-block pb-2"><T id="cred.title">Academic & ZAB Credentials</T></h1>
       <p className="text-xl text-gray-600 mb-12">Verified credentials and academic progression.</p>
 
       <div className="relative border-l-4 border-gray-200 ml-4 md:ml-6 space-y-12">

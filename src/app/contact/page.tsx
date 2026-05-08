@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import T from "@/components/T";
 
 export const metadata: Metadata = {
   title: "Contact & Bewerbungsmappe | Lydiah Nyakweba",
@@ -8,13 +9,13 @@ export const metadata: Metadata = {
 export default function Contact() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-16">
-      <h1 className="text-4xl font-extrabold text-industrial-grey mb-12 border-b-4 border-iron-lemon inline-block pb-2">Contact & Application Dossier</h1>
+      <h1 className="text-4xl font-extrabold text-industrial-grey mb-12 border-b-4 border-iron-lemon inline-block pb-2"><T id="contact.title">Contact & Application Dossier</T></h1>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
         
         {/* Structured Contact Form */}
         <section className="bg-white p-8 border border-gray-200 rounded-lg shadow-sm">
-          <h2 className="text-2xl font-bold text-industrial-grey mb-6">Send a Message</h2>
+          <h2 className="text-2xl font-bold text-industrial-grey mb-6"><T id="contact.form.title">Send a Message</T></h2>
           <form className="space-y-6">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
@@ -67,7 +68,7 @@ export default function Contact() {
               </ul>
             </div>
             <a href="/lydiah.nyakweba-bewerbung.pdf" target="_blank" className="block w-full text-center px-6 py-4 bg-iron-lemon text-industrial-grey font-bold rounded hover:bg-yellow-400 transition-colors shadow-lg">
-              Download Full Dossier (PDF)
+              <T id="contact.dossier.btn">Download Full Dossier (PDF)</T>
             </a>
           </div>
 

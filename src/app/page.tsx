@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import T from "@/components/T";
 
 export const metadata: Metadata = {
   title: "Lydiah Nyakweba | Logistics Data Analyst & Operations Research",
@@ -32,13 +33,13 @@ export default function Home() {
             <div className="mb-6 inline-flex items-center space-x-2 bg-white/60 backdrop-blur-sm border border-gray-200 rounded-full px-4 py-1.5 w-fit shadow-sm">
               <span className="flex h-2 w-2 rounded-full bg-green-500 animate-pulse"></span>
               <span className="text-xs font-bold text-industrial-grey tracking-wide uppercase">
-                Based in Germany
+                <T id="hero.badge">Based in Germany</T>
               </span>
             </div>
 
             <h1 className="text-5xl md:text-7xl font-extrabold text-industrial-grey tracking-tight mb-4 leading-tight">
-              Logistics Data Analyst <br />
-              <span className="text-gray-400 font-light">& Operations Research</span>
+              <T id="hero.title.1">Logistics Data Analyst</T> <br />
+              <span className="text-gray-400 font-light"><T id="hero.title.2">& Operations Research</T></span>
             </h1>
             
             <p className="text-xl text-gray-600 max-w-3xl mb-8 leading-relaxed font-medium">

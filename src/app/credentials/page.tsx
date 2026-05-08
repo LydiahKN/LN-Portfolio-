@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import T from "@/components/T";
 
 export const metadata: Metadata = {
   title: "Credentials & ZAB Certification | Lydiah Nyakweba",

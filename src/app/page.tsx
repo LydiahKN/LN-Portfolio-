@@ -1,6 +1,9 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import T from "@/components/T";
+import GradeConverter from "@/components/GradeConverter";
+import SupplyChainSimulation from "@/components/SupplyChainSimulation";
+import ZABShowcase from "@/components/ZABShowcase";
 
 export const metadata: Metadata = {
   title: "Lydiah Nyakweba | Logistics Data Analyst & Operations Research",
@@ -82,6 +85,11 @@ export default function Home() {
         </div>
       </section>
 
+      {/* 1.5 ZAB Showcase Section */}
+      <section className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+        <ZABShowcase />
+      </section>
+
       {/* 2. Infinite Auto-Scrolling Tech Marquee */}
       <section className="relative z-10 py-10 bg-industrial-grey text-white overflow-hidden border-y-4 border-iron-lemon shadow-xl">
         <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 mb-4">
@@ -143,6 +151,20 @@ export default function Home() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* 5. Interactive Engineering Tools Section */}
+      <section className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 bg-gray-50/50">
+        <div className="text-center mb-16">
+          <p className="text-sm font-bold text-gray-400 uppercase tracking-widest mb-2"><T id="tools.subtitle">Simulation & Analysis</T></p>
+          <h2 className="text-3xl md:text-4xl font-extrabold text-industrial-grey"><T id="tools.title">Interactive Decision Support</T></h2>
+          <div className="h-1 w-16 bg-iron-lemon mx-auto mt-6 rounded"></div>
+        </div>
+        
+        <div className="grid lg:grid-cols-2 gap-12 items-start">
+          <GradeConverter />
+          <SupplyChainSimulation />
         </div>
       </section>
 

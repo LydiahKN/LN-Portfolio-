@@ -57,8 +57,26 @@ export const translations: Record<string, Record<string, string>> = {
     
     "skills.title": "Qualifikationsmatrix",
     "skills.subtitle": "Technische & Analytische Fähigkeiten",
+    "skills.stack.title": "Aktuelle Entwicklung des Tech-Stacks",
+    "skills.stack.desc": "Während meine Kernkompetenz in der mathematischen Modellierung und Python-basierten Optimierung liegt, integriere ich aktiv SAP ERP (MM/PP-Module) und fortschrittliche Gurobi-Solver in meinen Workflow, um der hochskaligen Infrastruktur des DAX-gelisteten Logistiksektors in Deutschland gerecht zu werden.",
     
     "cred.title": "Qualifikationen & ZAB Anerkennung",
-    "cred.subtitle": "Akademischer und beruflicher Werdegang"
+    "cred.subtitle": "Akademischer und beruflicher Werdegang",
+
+    "converter.title": "Bayerischer Notenumrechner",
+    "converter.max": "Maximal mögliche Note",
+    "converter.min": "Mindestbestehensnote",
+    "converter.your": "Ihre Note",
+    "converter.result.label": "Deutsches Äquivalent",
+    
+    "sim.title": "Netzwerk-Störungssimulator",
+    "sim.desc": "Klicken Sie auf einen Knoten, um eine Verzögerung einzuführen und den Ansteckungseffekt zu beobachten (SIS-Modell).",
+    "sim.reset": "Netzwerk zurücksetzen",
+
+    "zab.badge.title": "EU Blue Card / Chancenkarte berechtigt",
+    "zab.badge.desc": "Abschlüsse, die von der Zentralstelle für ausländisches Bildungswesen (ZAB) offiziell als dem deutschen Master- und Bachelor-Niveau gleichwertig anerkannt wurden.",
+    
+    "tools.title": "Interaktive Entscheidungsunterstützung",
+    "tools.subtitle": "Simulation & Analyse"
   }
 };

@@ -67,8 +67,15 @@ export default function Contact() {
                 <li>Functional Arbeitszeugnis (TUM Recommendation)</li>
               </ul>
             </div>
-            <a href="/lydiah.nyakweba-bewerbung.pdf" target="_blank" className="block w-full text-center px-6 py-4 bg-iron-lemon text-industrial-grey font-bold rounded hover:bg-yellow-400 transition-colors shadow-lg">
-              <T id="contact.dossier.btn">Download Full Dossier (PDF)</T>
+            <a 
+              href="/lydiah-nyakweba-bewerbung.pdf" 
+              target="_blank" 
+              className="inline-flex items-center justify-center px-8 py-4 bg-iron-lemon text-industrial-grey font-black text-lg rounded-lg hover:bg-yellow-400 transition-all shadow-xl hover:-translate-y-1 active:translate-y-0"
+            >
+              <svg className="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+              </svg>
+              <T id="contact.dossier.btn">Download Complete Bewerbungsmappe (PDF)</T>
             </a>
           </div>
 

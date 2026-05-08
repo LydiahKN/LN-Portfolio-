@@ -4,8 +4,8 @@ import "./globals.css";
 import LanguageToggle from "@/components/LanguageToggle";
 
 export const metadata: Metadata = {
-  title: "Lydiahh Nyakweba | Logistics Data Analyst",
-  description: "Portfolio of Lydiahh Nyakweba, Logistics Data Analyst & Operations Research Specialist.",
+  title: "Lydiah Nyakweba | Logistics Data Analyst",
+  description: "Portfolio of Lydiah Nyakweba, Logistics Data Analyst & Operations Research Specialist.",
 };
 
 export default function RootLayout({
@@ -22,7 +22,7 @@ export default function RootLayout({
             <div className="flex justify-between items-center h-16">
               <div className="flex-shrink-0">
                 <Link href="/" className="font-bold text-xl tracking-tight text-industrial-grey hover:text-black">
-                  Lydiahh Nyakweba
+                  Lydiah Nyakweba
                 </Link>
               </div>
               <div className="flex items-center">
@@ -46,7 +46,7 @@ export default function RootLayout({
                     <span className="text-xs font-mono font-bold tracking-wider">⌘ K</span>
                   </button>
                   <LanguageToggle />
-                  <a href="/Lydiah-kwamboka-bewerbung.pdf" target="_blank" className="hidden md:inline-flex items-center justify-center px-4 py-2 bg-iron-lemon text-industrial-grey font-bold rounded-md hover:bg-yellow-400 transition-colors shadow-sm text-sm">
+                  <a href="/lydiah.nyakweba-bewerbung.pdf" target="_blank" className="hidden md:inline-flex items-center justify-center px-4 py-2 bg-iron-lemon text-industrial-grey font-bold rounded-md hover:bg-yellow-400 transition-colors shadow-sm text-sm">
                     Get Dossier
                   </a>
                 </div>
@@ -65,7 +65,7 @@ export default function RootLayout({
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
               <div>
-                <h3 className="text-xl font-bold text-iron-lemon mb-4">Lydiahh Nyakweba</h3>
+                <h3 className="text-xl font-bold text-iron-lemon mb-4">Lydiah Nyakweba</h3>
                 <p className="text-gray-400 text-sm leading-relaxed">
                   Logistics Data Analyst & Operations Research Specialist. Driving supply chain efficiency through advanced predictive modeling.
                 </p>
@@ -73,7 +73,7 @@ export default function RootLayout({
               <div>
                 <h3 className="text-lg font-bold mb-4">Contact</h3>
                 <ul className="text-gray-400 text-sm space-y-2">
-                  <li><a href="mailto:Lydiah.kwamboka@example.com" className="hover:text-iron-lemon transition-colors">Lydiah.kwamboka@example.com</a></li>
+                  <li><a href="mailto:lydiah.nyakweba@example.com" className="hover:text-iron-lemon transition-colors">lydiah.nyakweba@example.com</a></li>
                   <li><a href="#" className="hover:text-iron-lemon transition-colors">LinkedIn Profile</a></li>
                   <li><a href="#" className="hover:text-iron-lemon transition-colors">GitHub Repository</a></li>
                 </ul>
@@ -91,7 +91,7 @@ export default function RootLayout({
               </div>
             </div>
             <div className="border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
-              <p>&copy; {new Date().getFullYear()} Lydiahh Nyakweba. All rights reserved.</p>
+              <p>&copy; {new Date().getFullYear()} Lydiah Nyakweba. All rights reserved.</p>
               <div className="mt-4 md:mt-0 space-x-4">
                 <Link href="/impressum" className="hover:text-white transition-colors">Impressum</Link>
                 <Link href="/privacy" className="hover:text-white transition-colors">Datenschutzerklärung</Link>

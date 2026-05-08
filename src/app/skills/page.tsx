@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Qualifikationsmatrix & Skills | Lydiahh Nyakweba",
+  title: "Qualifikationsmatrix & Skills | Lydiah Nyakweba",
   description: "Comprehensive competency matrix detailing expertise in Python, R, Linear Programming, Time Series Analysis, and Supply Chain Risk Modeling.",
 };
 

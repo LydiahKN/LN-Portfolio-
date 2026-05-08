@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Impressum | Lydiahh Nyakweba",
-  description: "Impressum (Legal Notice) according to § 5 TMG for Lydiahh Nyakweba's professional portfolio.",
+  title: "Impressum | Lydiah Nyakweba",
+  description: "Impressum (Legal Notice) according to § 5 TMG for Lydiah Nyakweba's professional portfolio.",
 };
 
 export default function Impressum() {
@@ -14,7 +14,7 @@ export default function Impressum() {
         <section>
           <h2 className="text-xl font-bold text-industrial-grey mb-2">Angaben gemäß § 5 TMG</h2>
           <p className="leading-relaxed">
-            Lydiahh Nyakweba<br />
+            Lydiah Nyakweba<br />
             [Musterstraße 1]<br />
             [12345 Musterstadt]<br />
             Germany
@@ -25,14 +25,14 @@ export default function Impressum() {
           <h2 className="text-xl font-bold text-industrial-grey mb-2">Kontakt</h2>
           <p className="leading-relaxed">
             Telefon: +49 (0) 123 456789<br />
-            E-Mail: Lydiah.kwamboka@example.com
+            E-Mail: lydiah.nyakweba@example.com
           </p>
         </section>
 
         <section>
           <h2 className="text-xl font-bold text-industrial-grey mb-2">Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</h2>
           <p className="leading-relaxed">
-            Lydiahh Nyakweba<br />
+            Lydiah Nyakweba<br />
             [Musterstraße 1]<br />
             [12345 Musterstadt]
           </p>

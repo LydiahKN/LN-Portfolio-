@@ -2,8 +2,8 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Lydiahh Nyakweba | Logistics Data Analyst & Operations Research",
-  description: "Portfolio of Lydiahh Nyakweba, a Logistics Data Analyst specializing in predictive modeling, supply chain efficiency, and Operations Research for the German market.",
+  title: "Lydiah Nyakweba | Logistics Data Analyst & Operations Research",
+  description: "Portfolio of Lydiah Nyakweba, a Logistics Data Analyst specializing in predictive modeling, supply chain efficiency, and Operations Research for the German market.",
 };
 
 export default function Home() {
@@ -32,7 +32,7 @@ export default function Home() {
             <div className="mb-6 inline-flex items-center space-x-2 bg-white/60 backdrop-blur-sm border border-gray-200 rounded-full px-4 py-1.5 w-fit shadow-sm">
               <span className="flex h-2 w-2 rounded-full bg-green-500 animate-pulse"></span>
               <span className="text-xs font-bold text-industrial-grey tracking-wide uppercase">
-                Relocation Ready: ZAB Recognized & EU Blue Card
+                Based in Germany
               </span>
             </div>
 
@@ -65,7 +65,7 @@ export default function Home() {
               <Link href="/projects" className="inline-flex justify-center items-center px-8 py-4 bg-iron-lemon text-industrial-grey font-bold rounded-lg hover:bg-yellow-400 transition-colors shadow-md">
                 View Project Portfolio
               </Link>
-              <a href="/Lydiah-kwamboka-bewerbung.pdf" target="_blank" className="inline-flex justify-center items-center px-8 py-4 bg-industrial-grey text-white font-bold rounded-lg hover:bg-black transition-colors shadow-md">
+              <a href="/lydiah.nyakweba-bewerbung.pdf" target="_blank" className="inline-flex justify-center items-center px-8 py-4 bg-industrial-grey text-white font-bold rounded-lg hover:bg-black transition-colors shadow-md">
                 Download Dossier
               </a>
             </div>

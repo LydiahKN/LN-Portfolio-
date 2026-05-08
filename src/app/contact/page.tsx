@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact & Bewerbungsmappe | Lydiahh Nyakweba",
-  description: "Contact information and download link for the complete German application dossier (Bewerbungsmappe) for Lydiahh Nyakweba.",
+  title: "Contact & Bewerbungsmappe | Lydiah Nyakweba",
+  description: "Contact information and download link for the complete German application dossier (Bewerbungsmappe) for Lydiah Nyakweba.",
 };
 
 export default function Contact() {
@@ -66,13 +66,13 @@ export default function Contact() {
                 <li>Functional Arbeitszeugnis (TUM Recommendation)</li>
               </ul>
             </div>
-            <a href="/Lydiah-kwamboka-bewerbung.pdf" target="_blank" className="block w-full text-center px-6 py-4 bg-iron-lemon text-industrial-grey font-bold rounded hover:bg-yellow-400 transition-colors shadow-lg">
+            <a href="/lydiah.nyakweba-bewerbung.pdf" target="_blank" className="block w-full text-center px-6 py-4 bg-iron-lemon text-industrial-grey font-bold rounded hover:bg-yellow-400 transition-colors shadow-lg">
               Download Full Dossier (PDF)
             </a>
           </div>
 
           <div className="grid grid-cols-2 gap-4">
-            <a href="mailto:Lydiah.kwamboka@example.com" className="bg-white border border-gray-200 p-4 rounded text-center hover:border-iron-lemon transition-colors">
+            <a href="mailto:lydiah.nyakweba@example.com" className="bg-white border border-gray-200 p-4 rounded text-center hover:border-iron-lemon transition-colors">
               <span className="block text-xs font-bold text-gray-500 uppercase mb-1">Direct Email</span>
               <span className="text-sm font-bold text-industrial-grey break-all">Lydiah@example.com</span>
             </a>

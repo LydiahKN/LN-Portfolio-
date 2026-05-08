@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Project Portfolio (Dritte Seite) | Lydiahh Nyakweba",
+  title: "Project Portfolio (Dritte Seite) | Lydiah Nyakweba",
   description: "Proof of concept projects applying theoretical statistics to corporate logistics: Network Routing, Demand Modeling, and Risk Contagion.",
 };
 

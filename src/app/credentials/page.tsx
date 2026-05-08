@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Credentials & ZAB Certification | Lydiahh Nyakweba",
+  title: "Credentials & ZAB Certification | Lydiah Nyakweba",
   description: "ZAB-certified academic credentials in Applied Statistics from JKUAT and UoN. Relocation ready and EU Blue Card eligible for the German logistics sector.",
 };
 

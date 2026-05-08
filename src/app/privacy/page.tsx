@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Datenschutzerklärung | Lydiahh Nyakweba",
-  description: "Privacy Policy for Lydiahh Nyakweba's professional portfolio.",
+  title: "Datenschutzerklärung | Lydiah Nyakweba",
+  description: "Privacy Policy for Lydiah Nyakweba's professional portfolio.",
 };
 
 export default function Privacy() {

@@ -1,16 +1,9 @@
 "use client";
 
-import { useState } from "react";
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function LanguageToggle() {
-  const [lang, setLang] = useState<"EN" | "DE">("EN");
-
-  const toggleLang = () => {
-    // In a full implementation, this would update a React Context, 
-    // change the URL route (e.g., /en/ to /de/), or update a cookie.
-    const newLang = lang === "EN" ? "DE" : "EN";
-    setLang(newLang);
-  };
+  const { lang, toggleLang } = useLanguage();
 
   return (
     <button 

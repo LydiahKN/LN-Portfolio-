@@ -79,14 +79,13 @@ export default function RootLayout({
                 </ul>
               </div>
               <div>
-                <h3 className="text-lg font-bold mb-4">Relocation Status</h3>
+                <h3 className="text-lg font-bold mb-4">Location Status</h3>
                 <ul className="text-gray-400 text-sm space-y-2">
                   <li className="flex items-center space-x-2">
                     <span className="w-2 h-2 rounded-full bg-green-500"></span>
-                    <span>Actively seeking roles in Germany</span>
+                    <span>Based in Germany</span>
                   </li>
-                  <li>EU Blue Card Eligible</li>
-                  <li>ZAB Certified Degrees</li>
+                  <li>Available for On-Site / Hybrid</li>
                 </ul>
               </div>
             </div>

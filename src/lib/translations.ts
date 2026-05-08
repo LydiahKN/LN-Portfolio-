@@ -1,5 +1,14 @@
 export const translations: Record<string, Record<string, string>> = {
   de: {
+    "nav.credentials": "Qualifikationen",
+    "nav.skills": "Kompetenzen",
+    "nav.projects": "Projekte",
+    "nav.contact": "Kontakt",
+    "nav.dossier": "Bewerbungsmappe",
+    "footer.location": "Standortstatus",
+    "footer.based": "Basiert in Deutschland",
+    "footer.hybrid": "Verfügbar für On-Site / Hybrid",
+    
     "hero.title.1": "Logistik Daten Analystin",
     "hero.title.2": "& Operations Research",
     "hero.subtitle": "Nutzung fortschrittlicher mathematischer Modellierung und prädiktiver Analytik zur Steigerung der Lieferketteneffizienz, Optimierung von Routen und Minderung von Störungsrisiken.",
@@ -32,9 +41,24 @@ export const translations: Record<string, Record<string, string>> = {
     
     "ref.title": "Arbeitszeugnis / Referenzen",
     
-    "nav.dossier": "Bewerbungsmappe",
-    "footer.location": "Standortstatus",
-    "footer.based": "Basiert in Deutschland",
-    "footer.hybrid": "Verfügbar für On-Site / Hybrid",
+    "contact.title": "Kontakt & Bewerbungsmappe",
+    "contact.form.title": "Nachricht senden",
+    "contact.form.name": "Name *",
+    "contact.form.email": "E-Mail *",
+    "contact.form.reason": "Grund der Kontaktaufnahme",
+    "contact.form.message": "Nachricht *",
+    "contact.form.submit": "Anfrage absenden",
+    "contact.dossier.title": "Die Bewerbungsmappe",
+    "contact.dossier.desc": "Laden Sie die vollständige deutsche Bewerbungsmappe als ATS-optimiertes PDF herunter.",
+    "contact.dossier.btn": "Vollständige Mappe herunterladen (PDF)",
+
+    "projects.title": "Projektportfolio (Dritte Seite)",
+    "projects.subtitle": "Relevante Erfahrung & Fähigkeiten",
+    
+    "skills.title": "Qualifikationsmatrix",
+    "skills.subtitle": "Technische & Analytische Fähigkeiten",
+    
+    "cred.title": "Qualifikationen & ZAB Anerkennung",
+    "cred.subtitle": "Akademischer und beruflicher Werdegang"
   }
 };

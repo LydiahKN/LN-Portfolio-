@@ -15,8 +15,39 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Lydiah Nyakweba",
+    "jobTitle": "Logistics Data Analyst & Operations Research Specialist",
+    "url": "https://lydiah-nyakweba.com",
+    "sameAs": [
+      "https://linkedin.com/in/lydiah-nyakweba",
+      "https://github.com/LydiahKN"
+    ],
+    "knowsAbout": [
+      "Operations Research",
+      "Supply Chain Optimization",
+      "Data Science",
+      "Predictive Analytics",
+      "Logistics Management"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "Germany"
+    }
+  };
+
+  const escapedJsonLd = JSON.stringify(jsonLd).replace(/</g, '\\u003c');
+
   return (
     <html lang="en">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: escapedJsonLd }}
+        />
+      </head>
       <body className="flex flex-col min-h-screen">
         <LanguageProvider>
           {/* Navigation */}

@@ -53,7 +53,7 @@ export const translations: Record<string, Record<string, string>> = {
     "contact.dossier.btn": "Vollständige Mappe herunterladen (PDF)",
 
     "projects.title": "Projektportfolio (Dritte Seite)",
-    "projects.subtitle": "Relevante Erfahrung & Fähigkeiten",
+    "projects.subtitle": "Proof of Concept: Umsetzung theoretischer Statistik in unternehmerischen Mehrwert.",
     
     "skills.title": "Qualifikationsmatrix",
     "skills.subtitle": "Technische & Analytische Fähigkeiten",
@@ -69,14 +69,26 @@ export const translations: Record<string, Record<string, string>> = {
     "converter.your": "Ihre Note",
     "converter.result.label": "Deutsches Äquivalent",
     
-    "sim.title": "Netzwerk-Störungssimulator",
-    "sim.desc": "Klicken Sie auf einen Knoten, um eine Verzögerung einzuführen und den Ansteckungseffekt zu beobachten (SIS-Modell).",
+    "sim.title": "Enterprise Risk Simulator",
+    "sim.desc": "Eine professionelle Visualisierung der Risikoverbreitung in Tier-1- und Tier-2-Liefernetzwerken unter Verwendung von SIS-Ansteckungsparametern.",
     "sim.reset": "Netzwerk zurücksetzen",
 
     "zab.badge.title": "EU Blue Card / Chancenkarte berechtigt",
     "zab.badge.desc": "Abschlüsse, die von der Zentralstelle für ausländisches Bildungswesen (ZAB) offiziell als dem deutschen Master- und Bachelor-Niveau gleichwertig anerkannt wurden.",
     
     "tools.title": "Interaktive Entscheidungsunterstützung",
-    "tools.subtitle": "Simulation & Analyse"
+    "tools.subtitle": "Simulation & Analyse",
+
+    "project.1.title": "Prädiktive & KI-gestützte Logistikplanung",
+    "project.1.context": "Basierend auf STA409 Angewandte Zeitreihenanalyse",
+    "project.1.desc": "Lösung des Arbeitskräftemangels von 2026 durch Optimierung der Sicherheitsbestands- und Lagerlogik. Anwendung von ARIMA-Modellen zur Maximierung der Lieferzuverlässigkeit ohne Personalaufstockung, direktes Eingehen auf aktuelle Infrastrukturstörungen im DAX-gelisteten Logistiksektor.",
+    
+    "project.2.title": "Lieferkettenstörung & Risikokontagionsmodellierung",
+    "project.2.context": "Basierend auf Mathematischer Modellierung (Swiss TPH)",
+    "project.2.desc": "Anwendung epidemiologischer SIS/SIR-Modelle zur Simulation kaskadierender Ausfälle in Tier-1- und Tier-2-Netzwerken. Entwickelt zur proaktiven Risikominderung in volatilen Märkten, um systemische Resilienz gegen regionale Transportausfälle und globale Lieferengpässe zu gewährleisten.",
+    
+    "project.3.title": "Kostenorientierte Routen- & Ressourcenoptimierung",
+    "project.3.context": "Basierend auf Operations Research (STA321)",
+    "project.3.desc": "Mathematische Optimierung von Distributionszentren und Last-Mile-Scheduling. Einsatz linearer Programmierung zur Minimierung von Frachtkosten und Transitzeiten, um hohen Energiepreisen und Engpässen im Straßentransport im aktuellen deutschen Wirtschaftsklima entgegenzuwirken."
   }
 };

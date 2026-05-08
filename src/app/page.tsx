@@ -16,10 +16,10 @@ export default function Home() {
   const scrollTools = [...tools, ...tools, ...tools, ...tools];
 
   const processSteps = [
-    { num: "01", title: "Data Auditing", desc: "Deep-dive into historical transit, inventory, and supply chain data to identify hidden bottlenecks." },
-    { num: "02", title: "Mathematical Modeling", desc: "Apply predictive algorithms (ARIMA, Exponential Smoothing) to forecast demand cycles." },
-    { num: "03", title: "Network Optimization", desc: "Solve Vehicle Routing Problems (VRP) using linear programming to minimize freight costs." },
-    { num: "04", title: "Risk Mitigation", desc: "Deploy contagion modeling (SIS/SIR) to simulate and prevent cascading supply chain failures." },
+    { num: "01", titleId: "process.1.title", descId: "process.1.desc", fallbackTitle: "Data Auditing", fallbackDesc: "Deep-dive into historical transit, inventory, and supply chain data to identify hidden bottlenecks." },
+    { num: "02", titleId: "process.2.title", descId: "process.2.desc", fallbackTitle: "Mathematical Modeling", fallbackDesc: "Apply predictive algorithms (ARIMA, Exponential Smoothing) to forecast demand cycles." },
+    { num: "03", titleId: "process.3.title", descId: "process.3.desc", fallbackTitle: "Network Optimization", fallbackDesc: "Solve Vehicle Routing Problems (VRP) using linear programming to minimize freight costs." },
+    { num: "04", titleId: "process.4.title", descId: "process.4.desc", fallbackTitle: "Risk Mitigation", fallbackDesc: "Deploy contagion modeling (SIS/SIR) to simulate and prevent cascading supply chain failures." },
   ];
 
   return (
@@ -43,31 +43,31 @@ export default function Home() {
             </h1>
             
             <p className="text-xl text-gray-600 max-w-3xl mb-8 leading-relaxed font-medium">
-              Leveraging advanced mathematical modeling and predictive analytics to drive supply chain efficiency, optimize routing, and mitigate disruption risks.
+              <T id="hero.subtitle">Leveraging advanced mathematical modeling and predictive analytics to drive supply chain efficiency, optimize routing, and mitigate disruption risks.</T>
             </p>
 
             {/* Metrics */}
             <div className="flex gap-6 sm:gap-8 border-y border-gray-200/50 py-6 mb-8">
               <div>
                 <div className="text-3xl font-extrabold text-industrial-grey tabular-nums">2</div>
-                <div className="text-xs text-gray-500 font-bold tracking-wide uppercase mt-1">ZAB Degrees</div>
+                <div className="text-xs text-gray-500 font-bold tracking-wide uppercase mt-1"><T id="hero.metrics.zab">ZAB Degrees</T></div>
               </div>
               <div className="border-l border-gray-200/50 pl-6 sm:pl-8">
                 <div className="text-3xl font-extrabold text-industrial-grey tabular-nums">1.0</div>
-                <div className="text-xs text-gray-500 font-bold tracking-wide uppercase mt-1">Grade Equiv.</div>
+                <div className="text-xs text-gray-500 font-bold tracking-wide uppercase mt-1"><T id="hero.metrics.grade">Grade Equiv.</T></div>
               </div>
               <div className="border-l border-gray-200/50 pl-6 sm:pl-8">
                 <div className="text-3xl font-extrabold text-industrial-grey tabular-nums">C2</div>
-                <div className="text-xs text-gray-500 font-bold tracking-wide uppercase mt-1">English (A2 DE)</div>
+                <div className="text-xs text-gray-500 font-bold tracking-wide uppercase mt-1"><T id="hero.metrics.english">English (A2 DE)</T></div>
               </div>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
               <Link href="/projects" className="inline-flex justify-center items-center px-8 py-4 bg-iron-lemon text-industrial-grey font-bold rounded-lg hover:bg-yellow-400 transition-colors shadow-md">
-                View Project Portfolio
+                <T id="hero.btn.portfolio">View Project Portfolio</T>
               </Link>
-              <a href="/lydiah.nyakweba-bewerbung.pdf" target="_blank" className="inline-flex justify-center items-center px-8 py-4 bg-industrial-grey text-white font-bold rounded-lg hover:bg-black transition-colors shadow-md">
-                Download Dossier
+              <a href="/lydiah-nyakweba-bewerbung.pdf" target="_blank" className="inline-flex justify-center items-center px-8 py-4 bg-industrial-grey text-white font-bold rounded-lg hover:bg-black transition-colors shadow-md">
+                <T id="hero.btn.dossier">Download Dossier</T>
               </a>
             </div>
           </div>
@@ -101,26 +101,26 @@ export default function Home() {
       {/* 3. "3-in-1" Value Proposition Badges */}
       <section className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="text-center mb-16">
-          <p className="text-sm font-bold text-gray-400 uppercase tracking-widest mb-2">Core Value Proposition</p>
-          <h2 className="text-3xl md:text-4xl font-extrabold text-industrial-grey">The 3-in-1 Synergy</h2>
+          <p className="text-sm font-bold text-gray-400 uppercase tracking-widest mb-2"><T id="value.subtitle">Core Value Proposition</T></p>
+          <h2 className="text-3xl md:text-4xl font-extrabold text-industrial-grey"><T id="value.title">The 3-in-1 Synergy</T></h2>
           <div className="h-1 w-16 bg-iron-lemon mx-auto mt-6 rounded"></div>
         </div>
         
         <div className="grid md:grid-cols-3 gap-8">
           <div className="glass-panel p-8 rounded-2xl hover:border-iron-lemon transition-colors">
             <div className="w-12 h-12 bg-white/80 rounded-lg flex items-center justify-center mb-6 text-2xl shadow-sm border border-gray-100">📊</div>
-            <h3 className="text-xl font-bold text-industrial-grey mb-3">Data Science</h3>
-            <p className="text-gray-600 text-sm leading-relaxed font-medium">Advanced analytics, statistical modeling, and machine learning to extract actionable intelligence from massive logistics datasets.</p>
+            <h3 className="text-xl font-bold text-industrial-grey mb-3"><T id="value.data.title">Data Science</T></h3>
+            <p className="text-gray-600 text-sm leading-relaxed font-medium"><T id="value.data.desc">Advanced analytics, statistical modeling, and machine learning to extract actionable intelligence from massive logistics datasets.</T></p>
           </div>
           <div className="glass-panel p-8 rounded-2xl hover:border-iron-lemon transition-colors">
             <div className="w-12 h-12 bg-white/80 rounded-lg flex items-center justify-center mb-6 text-2xl shadow-sm border border-gray-100">🧮</div>
-            <h3 className="text-xl font-bold text-industrial-grey mb-3">Operations Research</h3>
-            <p className="text-gray-600 text-sm leading-relaxed font-medium">Mathematical optimization, linear programming, and combinatorial algorithms to minimize costs and maximize resource allocation.</p>
+            <h3 className="text-xl font-bold text-industrial-grey mb-3"><T id="value.or.title">Operations Research</T></h3>
+            <p className="text-gray-600 text-sm leading-relaxed font-medium"><T id="value.or.desc">Mathematical optimization, linear programming, and combinatorial algorithms to minimize costs and maximize resource allocation.</T></p>
           </div>
           <div className="glass-panel p-8 rounded-2xl hover:border-iron-lemon transition-colors">
             <div className="w-12 h-12 bg-white/80 rounded-lg flex items-center justify-center mb-6 text-2xl shadow-sm border border-gray-100">📦</div>
-            <h3 className="text-xl font-bold text-industrial-grey mb-3">Logistics Domain</h3>
-            <p className="text-gray-600 text-sm leading-relaxed font-medium">Deep understanding of supply chain volatility, demand forecasting, warehousing, and dynamic network routing.</p>
+            <h3 className="text-xl font-bold text-industrial-grey mb-3"><T id="value.log.title">Logistics Domain</T></h3>
+            <p className="text-gray-600 text-sm leading-relaxed font-medium"><T id="value.log.desc">Deep understanding of supply chain volatility, demand forecasting, warehousing, and dynamic network routing.</T></p>
           </div>
         </div>
       </section>
@@ -129,8 +129,8 @@ export default function Home() {
       <section className="relative z-10 bg-white/40 py-20 border-y border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-16 text-center md:text-left">
-            <p className="text-sm font-bold text-gray-400 uppercase tracking-widest mb-2">My Process</p>
-            <h2 className="text-3xl md:text-4xl font-extrabold text-industrial-grey">How I Solve Supply Chain Problems</h2>
+            <p className="text-sm font-bold text-gray-400 uppercase tracking-widest mb-2"><T id="process.subtitle">My Process</T></p>
+            <h2 className="text-3xl md:text-4xl font-extrabold text-industrial-grey"><T id="process.title">How I Solve Supply Chain Problems</T></h2>
           </div>
 
           <div className="grid md:grid-cols-4 gap-6">
@@ -138,8 +138,8 @@ export default function Home() {
               <div key={idx} className="bg-white p-8 rounded-2xl border border-gray-100 shadow-sm relative overflow-hidden group hover:shadow-xl transition-all">
                 <div className="absolute top-0 left-0 w-full h-1 bg-gray-200 group-hover:bg-iron-lemon transition-colors"></div>
                 <div className="text-4xl font-black text-gray-100 mb-4 tracking-tighter">{step.num}</div>
-                <h3 className="text-lg font-bold text-industrial-grey mb-3">{step.title}</h3>
-                <p className="text-sm text-gray-600 leading-relaxed font-medium">{step.desc}</p>
+                <h3 className="text-lg font-bold text-industrial-grey mb-3"><T id={step.titleId}>{step.fallbackTitle}</T></h3>
+                <p className="text-sm text-gray-600 leading-relaxed font-medium"><T id={step.descId}>{step.fallbackDesc}</T></p>
               </div>
             ))}
           </div>
@@ -149,7 +149,7 @@ export default function Home() {
       {/* Referenzen (Testimonial) Section */}
       <section className="relative z-10 max-w-4xl mx-auto px-4 py-20">
         <div className="glass-panel rounded-3xl p-10 md:p-16 text-center transform transition-transform hover:scale-[1.01]">
-          <p className="text-xs font-bold tracking-widest uppercase text-gray-400 mb-6">Arbeitszeugnis / References</p>
+          <p className="text-xs font-bold tracking-widest uppercase text-gray-400 mb-6"><T id="ref.title">Arbeitszeugnis / References</T></p>
           <blockquote className="text-2xl md:text-3xl text-industrial-grey font-light italic leading-snug mb-8">
             "Lydiah demonstrates an exceptional grasp of Operations Research. Her ability to translate complex mathematical theorems into actionable operational strategies is outstanding."
           </blockquote>

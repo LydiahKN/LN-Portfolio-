@@ -3,7 +3,7 @@ import T from "@/components/T";
 
 export const metadata: Metadata = {
   title: "Qualifikationsmatrix & Skills | Lydiah Nyakweba",
-  description: "Comprehensive competency matrix detailing expertise in Python, R, Linear Programming, Time Series Analysis, and Supply Chain Risk Modeling.",
+  description: "A comprehensive matrix of technical skills, Operations Research tools, and supply chain domain expertise.",
 };
 
 export default function Skills() {

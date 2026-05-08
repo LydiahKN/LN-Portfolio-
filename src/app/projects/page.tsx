@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import T from "@/components/T";
 
 export const metadata: Metadata = {
-  title: "<T id="projects.title">Project Portfolio (Dritte Seite)</T> | Lydiah Nyakweba",
+  title: "Project Portfolio (Dritte Seite) | Lydiah Nyakweba",
   description: "Proof of concept projects applying theoretical statistics to corporate logistics: Network Routing, Demand Modeling, and Risk Contagion.",
 };
 

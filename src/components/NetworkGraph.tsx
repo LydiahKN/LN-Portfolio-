@@ -1,5 +1,5 @@
 'use client';
-import React, { useCallback, useEffect, useState, useMemo } from 'react';
+import React, { useCallback, useEffect, useMemo } from 'react';
 import ReactFlow, { 
   addEdge, 
   Background, 
@@ -10,13 +10,19 @@ import ReactFlow, {
   useNodesState, 
   useEdgesState,
   Handle,
-  Position
+  Position,
+  NodeProps
 } from 'reactflow';
 import 'reactflow/dist/style.css';
 import T from './T';
 
+type SupplyNodeData = {
+  label: string;
+  status: 'healthy' | 'disrupted';
+};
+
 // Custom Node Component to look industrial
-const SupplyNode = ({ data }: any) => {
+const SupplyNode = ({ data }: NodeProps<SupplyNodeData>) => {
   const isDisrupted = data.status === 'disrupted';
   
   return (
@@ -32,9 +38,7 @@ const SupplyNode = ({ data }: any) => {
   );
 };
 
-
-
-const initialNodes: Node[] = [
+const initialNodes: Node<SupplyNodeData>[] = [
   { id: '1', type: 'supplyNode', position: { x: 250, y: 0 }, data: { label: 'Tier 2 Supplier', status: 'healthy' } },
   { id: '2', type: 'supplyNode', position: { x: 100, y: 100 }, data: { label: 'Tier 1 Component', status: 'healthy' } },
   { id: '3', type: 'supplyNode', position: { x: 400, y: 100 }, data: { label: 'Raw Material P.', status: 'healthy' } },
@@ -62,7 +66,7 @@ export default function NetworkGraph() {
 
   const onConnect = useCallback((params: Connection) => setEdges((eds) => addEdge(params, eds)), [setEdges]);
 
-  const onNodeClick = (_: any, node: Node) => {
+  const onNodeClick = useCallback((_: React.MouseEvent, node: Node) => {
     setNodes((nds) =>
       nds.map((n) => {
         if (n.id === node.id) {
@@ -71,7 +75,7 @@ export default function NetworkGraph() {
         return n;
       })
     );
-  };
+  }, [setNodes]);
 
   // Propagation Logic
   useEffect(() => {
@@ -102,7 +106,7 @@ export default function NetworkGraph() {
     }, 1500);
 
     return () => clearTimeout(timer);
-  }, [nodes, edges]);
+  }, [nodes, edges, setNodes]);
 
   const reset = () => {
     setNodes(initialNodes);

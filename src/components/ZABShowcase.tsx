@@ -9,7 +9,7 @@ export default function ZABShowcase() {
           <T id="zab.badge.title">EU Blue Card / Chancenkarte Eligible</T>
         </h3>
         <p className="text-sm text-green-700 leading-relaxed max-w-2xl">
-          <T id="zab.badge.desc">Degrees officially recognized by the Central Office for Foreign Education (ZAB) as equivalent to German Master's and Bachelor's levels.</T>
+          <T id="zab.badge.desc">Degrees officially recognized by the Central Office for Foreign Education (ZAB) as equivalent to German Master&apos;s and Bachelor&apos;s levels.</T>
         </p>
       </div>
       <div className="mt-6 md:mt-0 md:ml-8 shrink-0">

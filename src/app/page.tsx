@@ -173,7 +173,7 @@ export default function Home() {
         <div className="glass-panel rounded-3xl p-10 md:p-16 text-center transform transition-transform hover:scale-[1.01]">
           <p className="text-xs font-bold tracking-widest uppercase text-gray-400 mb-6"><T id="ref.title">Arbeitszeugnis / References</T></p>
           <blockquote className="text-2xl md:text-3xl text-industrial-grey font-light italic leading-snug mb-8">
-            "Lydiah demonstrates an exceptional grasp of Operations Research. Her ability to translate complex mathematical theorems into actionable operational strategies is outstanding."
+            &quot;Lydiah demonstrates an exceptional grasp of Operations Research. Her ability to translate complex mathematical theorems into actionable operational strategies is outstanding.&quot;
           </blockquote>
           <div className="flex flex-col items-center justify-center">
             <div className="font-bold text-black text-lg">Dr. Michael Munywoki</div>

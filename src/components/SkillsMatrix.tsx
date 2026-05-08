@@ -1,6 +1,5 @@
 'use client';
 import { useState } from 'react';
-import T from '@/components/T';
 
 const categories = ["All", "Analytics", "Optimization", "Forecasting", "Risk", "Domain"];
 

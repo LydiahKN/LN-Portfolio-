@@ -1,20 +1,31 @@
+'use client';
 import type { Metadata } from "next";
 import Link from "next/link";
 import "./globals.css";
 import LanguageToggle from "@/components/LanguageToggle";
 import { LanguageProvider } from "@/context/LanguageContext";
 import T from "@/components/T";
-
-export const metadata: Metadata = {
-  title: "Lydiah Nyakweba | Logistics Data Analyst",
-  description: "Portfolio of Lydiah Nyakweba, Logistics Data Analyst & Operations Research Specialist.",
-};
+import CommandPalette from "@/components/CommandPalette";
+import React, { useState, useEffect } from "react";
 
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const [isSearchOpen, setIsSearchOpen] = useState(false);
+
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+        e.preventDefault();
+        setIsSearchOpen(true);
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, []);
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Person",
@@ -50,6 +61,8 @@ export default function RootLayout({
       </head>
       <body className="flex flex-col min-h-screen">
         <LanguageProvider>
+          <CommandPalette isOpen={isSearchOpen} setIsOpen={setIsSearchOpen} />
+          
           {/* Navigation */}
           <header className="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-gray-200">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -75,7 +88,11 @@ export default function RootLayout({
                     </Link>
                   </nav>
                   <div className="flex items-center space-x-4">
-                    <button className="hidden lg:flex items-center gap-2 px-3 py-1.5 rounded-md border border-gray-300 bg-gray-50 hover:bg-gray-100 text-gray-500 transition-colors" title="Search OR Models">
+                    <button 
+                      onClick={() => setIsSearchOpen(true)}
+                      className="hidden lg:flex items-center gap-2 px-3 py-1.5 rounded-md border border-gray-300 bg-gray-50 hover:bg-gray-100 text-gray-500 transition-colors" 
+                      title="Search OR Models"
+                    >
                       <svg stroke="currentColor" fill="none" strokeWidth="2" viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round" height="14" width="14" xmlns="http://www.w3.org/2000/svg"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
                       <span className="text-xs font-mono font-bold tracking-wider">⌘ K</span>
                     </button>
@@ -108,6 +125,8 @@ export default function RootLayout({
                   <h3 className="text-lg font-bold mb-4">Contact</h3>
                   <ul className="text-gray-400 text-sm space-y-2">
                     <li><a href="mailto:lydiah.nyakweba@example.com" className="hover:text-iron-lemon transition-colors">lydiah.nyakweba@example.com</a></li>
+                    <li><a href="tel:+4915755988419" className="hover:text-iron-lemon transition-colors">+49 1575 5988419</a></li>
+                    <li><a href="https://wa.me/4915755988419" target="_blank" className="hover:text-iron-lemon transition-colors">WhatsApp</a></li>
                     <li><a href="#" className="hover:text-iron-lemon transition-colors">LinkedIn Profile</a></li>
                     <li><a href="#" className="hover:text-iron-lemon transition-colors">GitHub Repository</a></li>
                   </ul>

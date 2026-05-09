@@ -11,8 +11,30 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
+  // JSON-LD Structured Data for Next.js 15 SEO
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Person',
+    name: 'Lydiah Nyakweba',
+    jobTitle: 'Logistics Data Analyst & Operations Research Specialist',
+    description: 'Leveraging advanced mathematical modeling and predictive analytics to drive supply chain efficiency, optimize routing, and mitigate disruption risks in the German market.',
+    knowsAbout: [
+      "Operations Research",
+      "Supply Chain Optimization",
+      "Data Science",
+      "Predictive Analytics",
+      "Logistics Management"
+    ]
+  };
+
   const tools = [
-    "Python", "Power BI", "SQL", "ARIMA", "Gurobi", "SAP ERP", "SPSS", "MS Excel", "Time Series", "SIS/SIR Models", "Linear Programming", "Tableau", "Git"
+    { name: "Python", icon: <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M14.25.18l.9.2.73.26.59.3.45.32.34.34.25.34.16.33.1.3.04.26.02.2-.01.13V8.5h-6V10h10.75L24 10.75v1.25l-.1.3-.2.27-.3.2-.3.13h-2.9l-1.33 1.33-.06.12-.01.12v2.25l-.01.13-.03.12-.06.12-.07.1-.1.1-.12.06-.12.03-.13.01H15.5l-1.33 1.33-.06.12-.01.12v.67l-.01.13-.03.12-.06.12-.07.1-.1.1-.12.06-.12.03-.13.01H12l-1.33 1.33-.06.12-.01.12v.67l-.01.13-.03.12-.06.12-.07.1-.1.1-.12.06-.12.03-.13.01H8.5l-1.33 1.33-.06.12-.01.12v.67l-.01.13-.03.12-.06.12-.07.1-.1.1-.12.06-.12.03-.13.01H5l-1.33 1.33-.06.12-.01.12v.67l-.01.13-.03.12-.06.12-.07.1-.1.1-.12.06-.12.03-.13.01H1.5l-.13-.01-.12-.03-.12-.06-.1-.1-.07-.1-.06-.12-.03-.12-.01-.13V22.5l.01-.13.03-.12.06-.12.07-.1.1-.1.12-.06.12-.03.13-.01H5l1.33-1.33.06-.12.01-.12v-.67l.01-.13.03-.12.06-.12.07-.1.1-.1.12-.06.12-.03.13-.01h3.5l1.33-1.33.06-.12.01-.12v-.67l.01-.13.03-.12.06-.12.07-.1.1-.1.12-.06.12-.03.13-.01h3.5l1.33-1.33.06-.12.01-.12v-.67l.01-.13.03-.12.06-.12.07-.1.1-.1.12-.06.12-.03.13-.01h3.5l1.33-1.33.06-.12.01-.12v-.67l.01-.13.03-.12.06-.12.07-.1.1-.1.12-.06.12-.03.13-.01h3.5l1.33-1.33.06-.12.01-.12v-.67l.01-.13.03-.12.06-.12.07-.1.1-.1.12-.06.12-.03.13-.01h3.5l1.33-1.33.06-.12.01-.12v-6.5h-6V10h5.85l.12-.01.12-.03.12-.06.1-.1.07-.1.06-.12.03-.12.01-.13V5.5l-.01-.13-.03-.12-.06-.12-.07-.1-.1-.1-.12-.06-.12-.03-.13-.01h-3.5l-1.33-1.33-.06-.12-.01-.12v-.67l-.01-.13-.03-.12-.06-.12-.07-.1-.1-.1-.12-.06-.12-.03-.13-.01h-3.5l-1.33-1.33-.06-.12-.01-.12v-.67l-.01-.13-.03-.12-.06-.12-.07-.1-.1-.1-.12-.06-.12-.03-.13-.01h-3.5l-1.33-1.33-.06-.12-.01-.12V.18l.13.01.12.03.12.06.1.1.07.1.06.12.03.12.01.13v.67l.01.13.03.12.06.12.07.1.1.1.12.06.12.03.13.01h3.5l1.33 1.33.06.12.01.12v.67l.01.13.03.12.06.12.07.1.1.1.12.06.12.03.13.01h3.5l1.33 1.33.06.12.01.12v.67l.01.13.03.12.06.12.07.1.1.1.12.06.12.03.13.01H14.25z"/></svg> },
+    { name: "Power BI", icon: <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 24v-8h-4v8h4zm4 0v-12h-4v12h4zm4 0v-16h-4v16h4z"/></svg> },
+    { name: "SQL", icon: <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2c5.523 0 10 1.79 10 4s-4.477 4-10 4-10-1.79-10-4 4.477-4 10-4zm0 6c3.314 0 6-1.343 6-3s-2.686-3-6-3-6 1.343-6 3 2.686 3 6 3zm0 4c-5.523 0-10-1.79-10-4v4c0 2.21 4.477 4 10 4s10-1.79 10-4v-4c0 2.21-4.477 4-10 4zm0 4c-5.523 0-10-1.79-10-4v4c0 2.21 4.477 4 10 4s10-1.79 10-4v-4c0 2.21-4.477 4-10 4z"/></svg> },
+    { name: "SAP ERP", icon: <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg> },
+    { name: "Gurobi", icon: <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L2 7v10l10 5 10-5V7l-10-5zm0 18.18L4.5 15.5v-7L12 4.18l7.5 4.32v7L12 20.18z"/></svg> },
+    { name: "Tableau", icon: <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M10.5 13.5H13.5V10.5H10.5V13.5ZM10.5 17H13.5V14H10.5V17ZM10.5 10H13.5V7H10.5V10ZM7 13.5H10V10.5H7V13.5ZM14 13.5H17V10.5H14V13.5Z"/></svg> },
+    { name: "Git", icon: <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M20.5 11.25L12.75 3.5a1.5 1.5 0 00-2.1 0L9.4 4.75l2.1 2.1a1.5 1.5 0 11-2.1 2.1l-2.1-2.1L3.5 10.65a1.5 1.5 0 000 2.1l7.75 7.75a1.5 1.5 0 002.1 0l7.15-7.15a1.5 1.5 0 000-2.1z"/></svg> },
   ];
   
   // Duplicate for seamless infinite scroll
@@ -28,6 +50,12 @@ export default function Home() {
   return (
     <div className="gradient-mesh min-h-screen">
       
+      {/* 0. SEO JSON-LD Injection */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, '\\u003c') }}
+      />
+
       {/* 1. Hero Section with Glassmorphism */}
       <section className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="flex flex-col md:flex-row items-center w-full gap-12">
@@ -98,8 +126,9 @@ export default function Home() {
         <div className="relative flex w-[300%] md:w-[200%] lg:w-full overflow-hidden hide-scrollbar">
           <div className="flex w-max animate-infinite-scroll gap-4 px-4 items-center">
             {scrollTools.map((tool, idx) => (
-              <div key={idx} className="flex-shrink-0 bg-white/10 backdrop-blur-md px-6 py-3 rounded-xl border border-white/20 font-bold tracking-wide">
-                {tool}
+              <div key={idx} className="flex-shrink-0 bg-white/10 backdrop-blur-md px-6 py-3 rounded-xl border border-white/20 font-bold tracking-wide flex items-center gap-3">
+                <span className="text-iron-lemon">{tool.icon}</span>
+                {tool.name}
               </div>
             ))}
           </div>

@@ -80,7 +80,7 @@ export default function Home() {
                 <Link href="/projects" className="inline-flex justify-center items-center px-8 py-4 bg-iron-lemon text-industrial-grey font-bold rounded-lg hover:bg-yellow-400 transition-all hover:scale-105 shadow-md">
                   <T id="hero.btn.portfolio">View Project Portfolio</T>
                 </Link>
-                <a href="/lydiah-nyakweba-bewerbung.pdf" target="_blank" className="inline-flex justify-center items-center px-8 py-4 bg-industrial-grey text-white font-bold rounded-lg hover:bg-black transition-all hover:scale-105 shadow-md">
+                <a href="/lydiah-nyakweba-cv.html" target="_blank" className="inline-flex justify-center items-center px-8 py-4 bg-industrial-grey text-white font-bold rounded-lg hover:bg-black transition-all hover:scale-105 shadow-md">
                   <T id="hero.btn.dossier">Download Dossier</T>
                 </a>
               </div>
@@ -280,7 +280,50 @@ export default function Home() {
         </Reveal>
       </section>
 
-      {/* 6. Simulation Lab */}
+      {/* NEW: 2026 German Market Alignment (Inspired by Strategic Analysis) */}
+      <section className="relative z-10 bg-industrial-grey py-24 overflow-hidden border-y border-iron-lemon/30">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <Reveal>
+            <div className="text-center mb-16">
+              <p className="text-xs font-black text-iron-lemon uppercase tracking-widest mb-2">Market Intelligence // 2026 Focus</p>
+              <h2 className="text-3xl md:text-5xl font-black text-white uppercase tracking-tighter">Solving the <span className="text-gray-500">German Logistics Challenge.</span></h2>
+              <div className="h-1.5 w-16 bg-iron-lemon mx-auto mt-6 rounded-full"></div>
+            </div>
+          </Reveal>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            <Reveal delay={100}>
+              <div className="bg-white/5 border border-white/10 p-8 rounded-3xl hover:border-iron-lemon transition-all group">
+                <div className="w-12 h-12 bg-iron-lemon/10 rounded-xl flex items-center justify-center text-iron-lemon mb-6 group-hover:scale-110 transition-transform">
+                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"></path></svg>
+                </div>
+                <h3 className="text-xl font-black text-white mb-4 uppercase tracking-tight">Predictive Routing</h3>
+                <p className="text-sm text-gray-400 leading-relaxed font-bold">Mitigating the 2026 driver shortage by mathematically optimizing European same-day networks through advanced Vehicle Routing (VRP) algorithms.</p>
+              </div>
+            </Reveal>
+
+            <Reveal delay={200}>
+              <div className="bg-white/5 border border-white/10 p-8 rounded-3xl hover:border-iron-lemon transition-all group">
+                <div className="w-12 h-12 bg-blue-500/10 rounded-xl flex items-center justify-center text-blue-400 mb-6 group-hover:scale-110 transition-transform">
+                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                </div>
+                <h3 className="text-xl font-black text-white mb-4 uppercase tracking-tight">LkSG Compliance</h3>
+                <p className="text-sm text-gray-400 leading-relaxed font-bold">Applying SIS/SIR risk contagion modeling to identify supplier vulnerabilities, ensuring adherence to the German Supply Chain Due Diligence Act.</p>
+              </div>
+            </Reveal>
+
+            <Reveal delay={300}>
+              <div className="bg-white/5 border border-white/10 p-8 rounded-3xl hover:border-iron-lemon transition-all group">
+                <div className="w-12 h-12 bg-green-500/10 rounded-xl flex items-center justify-center text-green-400 mb-6 group-hover:scale-110 transition-transform">
+                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                </div>
+                <h3 className="text-xl font-black text-white mb-4 uppercase tracking-tight">AI-Driven Fulfillment</h3>
+                <p className="text-sm text-gray-400 leading-relaxed font-bold">Optimizing safety stock and e-commerce warehousing operations through predictive demand smoothing to combat 2026 labor market volatility.</p>
+              </div>
+            </Reveal>
+          </div>
+        </div>
+      </section>
       <section className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 bg-gray-50/50 rounded-3xl mb-20 border border-gray-100 overflow-hidden">
         <div className="absolute -top-24 -left-24 w-64 h-64 bg-iron-lemon/10 rounded-full blur-3xl animate-float"></div>
         <Reveal>

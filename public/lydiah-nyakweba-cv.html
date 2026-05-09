@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lydiah Nyakweba | Logistics Data Analyst CV</title>
+    <style>
+        :root {
+            --iron-lemon: #FEE12B;
+            --industrial-grey: #3E3E3E;
+            --text-dark: #1a1a1a;
+            --text-muted: #666666;
+            --bg-light: #f9f9f9;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; 
+            color: var(--text-dark);
+            line-height: 1.5;
+            background: #e0e0e0;
+            padding: 40px 20px;
+        }
+
+        .cv-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+            padding: 60px;
+            border-top: 10px solid var(--iron-lemon);
+            position: relative;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 50px;
+            border-bottom: 2px solid var(--bg-light);
+            padding-bottom: 30px;
+        }
+
+        .header-main h1 {
+            font-size: 32px;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: -1px;
+            color: var(--industrial-grey);
+            margin-bottom: 5px;
+        }
+
+        .header-main p {
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .header-contact {
+            text-align: right;
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--text-muted);
+        }
+
+        .header-contact a {
+            color: var(--industrial-grey);
+            text-decoration: none;
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section-title {
+            font-size: 12px;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .section-title::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: var(--bg-light);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-cols: 1fr 2fr;
+            gap: 40px;
+        }
+
+        .experience-item {
+            margin-bottom: 30px;
+        }
+
+        .experience-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .experience-header h3 {
+            font-size: 18px;
+            font-weight: 800;
+            color: var(--industrial-grey);
+        }
+
+        .experience-header span {
+            font-size: 12px;
+            font-weight: 700;
+            color: var(--text-muted);
+        }
+
+        .experience-company {
+            font-size: 13px;
+            font-weight: 700;
+            color: var(--industrial-grey);
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .experience-desc {
+            font-size: 14px;
+            color: var(--text-muted);
+            margin-left: 20px;
+        }
+
+        .experience-desc li {
+            margin-bottom: 5px;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-cols: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .skill-tag {
+            background: var(--bg-light);
+            padding: 8px 12px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 700;
+            color: var(--industrial-grey);
+            border-left: 3px solid var(--iron-lemon);
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 4px 8px;
+            background: var(--iron-lemon);
+            font-size: 10px;
+            font-weight: 900;
+            text-transform: uppercase;
+            border-radius: 3px;
+            margin-bottom: 10px;
+        }
+
+        @media print {
+            body { background: white; padding: 0; }
+            .cv-container { box-shadow: none; max-width: 100%; padding: 0; }
+            .no-print { display: none; }
+        }
+
+        .download-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: var(--industrial-grey);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-weight: 800;
+            text-decoration: none;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            font-size: 14px;
+            z-index: 100;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="javascript:window.print()" class="download-btn no-print">Print to PDF</a>
+
+    <div class="cv-container">
+        <header>
+            <div class="header-main">
+                <div class="badge">ZAB Verified // 1.0 Equiv.</div>
+                <h1>Lydiah Nyakweba</h1>
+                <p>Logistics Data Analyst & Operations Research Specialist</p>
+            </div>
+            <div class="header-contact">
+                <a href="mailto:lydiah.nyakweba@example.com">lydiah.nyakweba@example.com</a>
+                <a href="tel:+4915755988419">+49 1575 5988419</a>
+                <span>Berlin, Germany (Available for Hybrid)</span>
+                <a href="https://linkedin.com/in/lydiah-nyakweba">linkedin.com/in/lydiah-nyakweba</a>
+            </div>
+        </header>
+
+        <div class="section">
+            <h2 class="section-title">Executive Profile</h2>
+            <p style="font-size: 15px; color: var(--text-muted); font-weight: 500;">
+                Highly analytical Logistics Professional with a First-Class Honours background in Mathematics and Statistics. Specializing in Operations Research (OR), predictive supply chain modeling, and network optimization. Expert in translating complex data into cost-saving logistics strategies for the German industrial market.
+            </p>
+        </div>
+
+        <div class="grid">
+            <div class="column-left">
+                <div class="section">
+                    <h2 class="section-title">Education</h2>
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <h3 style="font-size: 14px;">M.Sc. Logistics & Supply Chain</h3>
+                            <span>2022-2024</span>
+                        </div>
+                        <span class="experience-company">ZAB VERIFIED (GERMAN 1.0 EQUIV.)</span>
+                    </div>
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <h3 style="font-size: 14px;">B.Sc. Mathematics & Statistics</h3>
+                            <span>2017-2021</span>
+                        </div>
+                        <span class="experience-company">Technical University of Mombasa</span>
+                        <p style="font-size: 12px; color: var(--text-muted);">First Class Honours.</p>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h2 class="section-title">Technical Toolkit</h2>
+                    <div class="skills-grid">
+                        <div class="skill-tag">Python (Pandas)</div>
+                        <div class="skill-tag">Gurobi Solver</div>
+                        <div class="skill-tag">SQL (Advanced)</div>
+                        <div class="skill-tag">SAP ERP (MM)</div>
+                        <div class="skill-tag">Tableau / Power BI</div>
+                        <div class="skill-tag">Network Analysis</div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h2 class="section-title">Languages</h2>
+                    <div style="font-size: 13px; font-weight: 700;">
+                        English: C2 (Native/Fluent)<br>
+                        German: B1 (In Progress)<br>
+                        Swahili: Native
+                    </div>
+                </div>
+            </div>
+
+            <div class="column-right">
+                <div class="section">
+                    <h2 class="section-title">Professional Experience</h2>
+                    
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <h3>Operations Research Analyst // Strategy Consultant</h3>
+                            <span>2024 - Present</span>
+                        </div>
+                        <span class="experience-company">HLT Management GmbH (Bremen, Germany)</span>
+                        <div class="badge" style="background: var(--bg-light); color: var(--industrial-grey); border: 1px solid var(--industrial-grey); margin-top: 5px;">Specialization: European Same-Day Logistics & LkSG Compliance</div>
+                        <ul class="experience-desc" style="margin-top: 15px;">
+                            <li><strong>European Network Optimization:</strong> Solving combinatorial VRP (Vehicle Routing Problems) for same-day delivery fleets, balancing load capacity against driver shortages.</li>
+                            <li><strong>E-Commerce Demand Smoothing:</strong> Developing ARIMA-based predictive models for fulfillment warehousing to optimize safety stock during high-volatility labor cycles.</li>
+                            <li><strong>Risk Contagion & LkSG Strategy:</strong> Applying SIS/SIR mathematical frameworks to identify supply chain vulnerabilities and assist clients with Supply Chain Due Diligence Act mandates.</li>
+                        </ul>
+                    </div>
+
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <h3>Logistics Data Analyst</h3>
+                            <span>2022 - 2024</span>
+                        </div>
+                        <span class="experience-company">Technical University Research (Operations Focus)</span>
+                        <ul class="experience-desc">
+                            <li>Automated data ingestion from SQL databases into Python analytical dashboards, reducing warehouse picking travel distance by 20% via linear programming.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h2 class="section-title">Key Projects</h2>
+                    <div class="experience-item">
+                        <h3 style="font-size: 14px; margin-bottom: 5px;">Last-Mile Optimization Platform</h3>
+                        <p style="font-size: 13px; color: var(--text-muted);">Integrated Google Maps API with Python-based Dijkstra solvers to minimize urban delivery costs.</p>
+                    </div>
+                    <div class="experience-item">
+                        <h3 style="font-size: 14px; margin-bottom: 5px;">Disruption Simulation Engine</h3>
+                        <p style="font-size: 13px; color: var(--text-muted);">Created a mathematical twin of a regional distribution network to stress-test N-1 resilience scenarios.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer style="margin-top: 60px; border-top: 1px solid var(--bg-light); pt: 30px; text-align: center; font-size: 11px; color: var(--text-muted); font-weight: 700; text-transform: uppercase; letter-spacing: 2px;">
+            Digital Dossier // LN-2026-STABLE // berlin_fra1
+        </footer>
+    </div>
+
+</body>
+</html>

@@ -116,7 +116,7 @@ export default function RootLayout({
                       <span className="text-[10px] font-mono font-black tracking-widest">⌘ K</span>
                     </button>
                     <LanguageToggle />
-                    <a href="/lydiah-nyakweba-bewerbung.pdf" target="_blank" className="hidden md:inline-flex items-center justify-center px-4 py-2 bg-iron-lemon text-industrial-grey font-black uppercase tracking-widest rounded-md hover:bg-yellow-400 transition-all shadow-md text-[10px]">
+                    <a href="/lydiah-nyakweba-cv.html" target="_blank" className="hidden md:inline-flex items-center justify-center px-4 py-2 bg-iron-lemon text-industrial-grey font-black uppercase tracking-widest rounded-md hover:bg-yellow-400 transition-all shadow-md text-[10px]">
                       <T id="nav.dossier">Get Dossier</T>
                     </a>
                   </div>

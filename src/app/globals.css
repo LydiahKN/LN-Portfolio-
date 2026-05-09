@@ -3,67 +3,80 @@
 @theme {
   --color-iron-lemon: #FEE12B;
   --color-industrial-grey: #3E3E3E;
-  
-  --font-sans: 'Inter', 'Roboto', sans-serif;
-
-  --animate-infinite-scroll: infinite-scroll 35s linear infinite;
-
-  @keyframes infinite-scroll {
-    from { transform: translateX(0); }
-    to { transform: translateX(-50%); }
-  }
 }
 
 @layer base {
   body {
-    @apply bg-white text-industrial-grey font-sans antialiased;
+    @apply bg-white text-industrial-grey;
   }
 }
 
-.gradient-mesh {
-  position: relative;
-  background-color: #fafafa;
-  overflow: hidden;
-}
+@layer utilities {
+  .gradient-mesh {
+    background-color: #ffffff;
+    background-image: 
+      radial-gradient(at 0% 0%, rgba(254, 225, 43, 0.05) 0px, transparent 50%),
+      radial-gradient(at 100% 0%, rgba(62, 62, 62, 0.03) 0px, transparent 50%),
+      radial-gradient(at 100% 100%, rgba(254, 225, 43, 0.05) 0px, transparent 50%),
+      radial-gradient(at 0% 100%, rgba(62, 62, 62, 0.03) 0px, transparent 50%);
+  }
 
-.gradient-mesh::before {
-  content: "";
-  position: absolute;
-  top: -20%;
-  left: -10%;
-  width: 50vw;
-  height: 50vw;
-  background: radial-gradient(circle, rgba(254, 225, 43, 0.15) 0%, rgba(254, 225, 43, 0) 60%);
-  border-radius: 50%;
-  z-index: 0;
-  pointer-events: none;
-}
+  .glass-panel {
+    @apply bg-white/70 backdrop-blur-md border border-white/20;
+  }
 
-.gradient-mesh::after {
-  content: "";
-  position: absolute;
-  bottom: -20%;
-  right: -10%;
-  width: 60vw;
-  height: 60vw;
-  background: radial-gradient(circle, rgba(62, 62, 62, 0.08) 0%, rgba(62, 62, 62, 0) 60%);
-  border-radius: 50%;
-  z-index: 0;
-  pointer-events: none;
-}
+  /* Custom Animations */
+  @keyframes infinite-scroll {
+    from { transform: translateX(0); }
+    to { transform: translateX(-33.33%); }
+  }
+  .animate-infinite-scroll {
+    animation: infinite-scroll 40s linear infinite;
+  }
 
-.glass-panel {
-  background: rgba(255, 255, 255, 0.6);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
-}
+  @keyframes reveal-up {
+    from { 
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to { 
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 
-.hide-scrollbar::-webkit-scrollbar {
-  display: none;
-}
-.hide-scrollbar {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+  .reveal-on-scroll {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .reveal-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  @keyframes glow-pulse {
+    0%, 100% { opacity: 0.3; transform: scale(1); }
+    50% { opacity: 0.6; transform: scale(1.1); }
+  }
+  .animate-glow-pulse {
+    animation: glow-pulse 4s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
 }

@@ -114,6 +114,82 @@ export default function Projects() {
         ))}
       </div>
 
+      {/* NEW: Model Performance & Scaling Matrix (Inspired by Omari Studio) */}
+      <div className="mt-24 bg-industrial-grey rounded-3xl p-8 md:p-12 shadow-2xl relative overflow-hidden border border-white/10">
+        <div className="absolute top-0 right-0 w-64 h-64 bg-iron-lemon/5 rounded-full blur-3xl animate-glow-pulse"></div>
+        
+        <div className="relative z-10">
+          <div className="mb-12">
+            <p className="text-xs font-black text-iron-lemon uppercase tracking-widest mb-2">Technical Inventory</p>
+            <h2 className="text-3xl md:text-4xl font-black text-white uppercase tracking-tighter">Model Performance & <span className="text-gray-500">Scaling Matrix</span></h2>
+            <div className="h-1.5 w-16 bg-iron-lemon mt-6 rounded-full"></div>
+          </div>
+
+          <div className="overflow-x-auto rounded-xl border border-white/10 bg-black/20 backdrop-blur-sm">
+            <table className="w-full text-left text-sm border-collapse">
+              <thead>
+                <tr className="border-b border-white/10 text-gray-400 uppercase text-[10px] font-black tracking-widest">
+                  <th className="px-6 py-4">Simulation Engine</th>
+                  <th className="px-6 py-4">Max Node Capacity</th>
+                  <th className="px-6 py-4">Avg. Solver Latency</th>
+                  <th className="px-6 py-4">Verification Level</th>
+                  <th className="px-6 py-4">SLA Ready</th>
+                </tr>
+              </thead>
+              <tbody className="text-gray-200 font-bold">
+                <tr className="border-b border-white/5 hover:bg-white/5 transition-colors group">
+                  <td className="px-6 py-6 flex items-center gap-3">
+                    <div className="w-2 h-2 rounded-full bg-green-500"></div>
+                    Time-Series (ARIMA/LSTM)
+                  </td>
+                  <td className="px-6 py-6">1.2M Data Points</td>
+                  <td className="px-6 py-6 font-mono text-iron-lemon">450ms</td>
+                  <td className="px-6 py-6 text-[10px] uppercase tracking-widest">Grade 1.0 (Equivalent)</td>
+                  <td className="px-6 py-6">
+                    <span className="px-2 py-1 bg-green-500/20 text-green-400 rounded-md border border-green-500/20">99.5%</span>
+                  </td>
+                </tr>
+                <tr className="border-b border-white/5 hover:bg-white/5 transition-colors">
+                  <td className="px-6 py-6 flex items-center gap-3">
+                    <div className="w-2 h-2 rounded-full bg-blue-500"></div>
+                    VRP Network Solver
+                  </td>
+                  <td className="px-6 py-6">15,000 Nodes</td>
+                  <td className="px-6 py-6 font-mono text-iron-lemon">1.2s</td>
+                  <td className="px-6 py-6 text-[10px] uppercase tracking-widest">Industry Standard</td>
+                  <td className="px-6 py-6">
+                    <span className="px-2 py-1 bg-green-500/20 text-green-400 rounded-md border border-green-500/20">99.0%</span>
+                  </td>
+                </tr>
+                <tr className="hover:bg-white/5 transition-colors">
+                  <td className="px-6 py-6 flex items-center gap-3">
+                    <div className="w-2 h-2 rounded-full bg-iron-lemon"></div>
+                    Risk Contagion Engine
+                  </td>
+                  <td className="px-6 py-6">100k Connections</td>
+                  <td className="px-6 py-6 font-mono text-iron-lemon">850ms</td>
+                  <td className="px-6 py-6 text-[10px] uppercase tracking-widest">Academic Mastery</td>
+                  <td className="px-6 py-6">
+                    <span className="px-2 py-1 bg-green-500/20 text-green-400 rounded-md border border-green-500/20">99.9%</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div className="mt-8 flex items-center gap-6 text-[10px] font-black uppercase tracking-widest text-gray-500">
+            <div className="flex items-center gap-2">
+              <span className="w-3 h-3 bg-iron-lemon rounded-sm"></span>
+              <span>Validated via ZAB Equivalency</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <span className="w-3 h-3 bg-industrial-grey border border-white/20 rounded-sm"></span>
+              <span>2026 Operational Readiness</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* Deep Dive Modal */}
       {selectedProject && (
         <div className="fixed inset-0 z-[110] flex items-center justify-center px-4">

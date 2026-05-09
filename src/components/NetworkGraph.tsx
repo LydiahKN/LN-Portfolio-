@@ -1,5 +1,5 @@
 'use client';
-import React, { useCallback, useEffect, useMemo } from 'react';
+import React, { useCallback, useEffect } from 'react';
 import ReactFlow, { 
   addEdge, 
   Background, 
@@ -38,6 +38,11 @@ const SupplyNode = ({ data }: NodeProps<SupplyNodeData>) => {
   );
 };
 
+// Define nodeTypes OUTSIDE the component to ensure static reference
+const nodeTypes = {
+  supplyNode: SupplyNode,
+};
+
 const initialNodes: Node<SupplyNodeData>[] = [
   { id: '1', type: 'supplyNode', position: { x: 250, y: 0 }, data: { label: 'Tier 2 Supplier', status: 'healthy' } },
   { id: '2', type: 'supplyNode', position: { x: 100, y: 100 }, data: { label: 'Tier 1 Component', status: 'healthy' } },
@@ -57,10 +62,6 @@ const initialEdges: Edge[] = [
 ];
 
 export default function NetworkGraph() {
-  const nodeTypes = useMemo(() => ({
-    supplyNode: SupplyNode,
-  }), []);
-
   const [nodes, setNodes, onNodesChange] = useNodesState(initialNodes);
   const [edges, setEdges, onEdgesChange] = useEdgesState(initialEdges);
 

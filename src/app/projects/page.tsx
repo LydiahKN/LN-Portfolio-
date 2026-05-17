@@ -1,5 +1,6 @@
 'use client';
 import React, { useState } from 'react';
+import Link from 'next/link';
 import T from '@/components/T';
 
 type ProjectDetail = {
@@ -73,6 +74,29 @@ export default function Projects() {
       <p className="text-xl text-gray-600 mb-12">
         <T id="projects.subtitle">Proof of Concept: Translating theoretical statistics into corporate logistics value.</T>
       </p>
+
+      {/* FLAGSHIP PROJECT BANNER */}
+      <div className="mb-16 bg-industrial-grey text-white rounded-2xl overflow-hidden shadow-2xl border border-white/10 relative">
+        <div className="absolute top-0 right-0 w-96 h-96 bg-iron-lemon/10 rounded-full blur-3xl translate-x-1/3 -translate-y-1/3"></div>
+        <div className="p-8 md:p-12 relative z-10 flex flex-col md:flex-row justify-between items-center gap-8">
+          <div className="flex-1">
+            <span className="bg-iron-lemon text-black text-[10px] font-black px-3 py-1 uppercase tracking-widest rounded-sm mb-4 inline-block"><T id="project.co2.banner.badge">Flagship Case Study</T></span>
+            <h2 className="text-3xl md:text-4xl font-black mb-4 tracking-tighter"><T id="project.co2.banner.title">Predicting 2027 CO₂ Road Charges</T></h2>
+            <p className="text-gray-300 mb-6 max-w-2xl leading-relaxed">
+              <T id="project.co2.banner.desc">A data-driven macroeconomic simulation of the German logistics transformation, evaluating the financial impact of the expanded BFStrMG tolls on last-mile and heavy goods fleets.</T>
+            </p>
+            <Link href="/projects/co2-logistics-model" className="inline-flex items-center gap-2 bg-white text-industrial-grey px-6 py-3 text-xs font-black uppercase tracking-widest rounded-lg hover:bg-iron-lemon hover:text-black transition-colors">
+              <T id="project.co2.banner.btn">Open Interactive Model</T>
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+            </Link>
+          </div>
+          <div className="hidden md:flex w-1/3 justify-end relative">
+            <div className="w-48 h-48 bg-white/5 rounded-full border-4 border-iron-lemon/30 flex items-center justify-center relative shadow-[0_0_50px_rgba(234,179,8,0.1)]">
+              <svg className="w-20 h-20 text-iron-lemon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         {projects.map((project) => (

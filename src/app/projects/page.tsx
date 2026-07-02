@@ -129,10 +129,22 @@ export default function Projects() {
                   </span>
                 ))}
               </div>
-              <button className="text-industrial-grey font-black text-xs uppercase tracking-widest flex items-center gap-2 group-hover:text-iron-lemon transition-colors">
-                <span>View Methodology</span>
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
-              </button>
+              <div className="flex justify-between items-center mt-auto">
+                <button className="text-industrial-grey font-black text-xs uppercase tracking-widest flex items-center gap-2 group-hover:text-iron-lemon transition-colors">
+                  <span>View Methodology</span>
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                </button>
+                {project.id === "demand-modeling" && (
+                  <Link 
+                    href="/dashboard"
+                    onClick={(e) => e.stopPropagation()}
+                    className="bg-blue-600 hover:bg-blue-700 text-white text-[10px] font-black uppercase tracking-widest px-3.5 py-2.5 rounded-lg transition-colors flex items-center gap-1.5 shadow-sm"
+                  >
+                    <span>Live Demo</span>
+                    <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                  </Link>
+                )}
+              </div>
             </div>
           </div>
         ))}
@@ -291,6 +303,15 @@ export default function Projects() {
               >
                 Close Case Study
               </button>
+              {selectedProject.id === "demand-modeling" && (
+                <Link 
+                  href="/dashboard"
+                  className="px-6 py-2 bg-blue-600 hover:bg-blue-700 text-white text-xs font-black uppercase tracking-widest rounded-lg transition-all flex items-center gap-1.5 shadow-sm"
+                >
+                  <span>Open Live Control Tower</span>
+                  <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                </Link>
+              )}
               <a href="/contact" className="px-6 py-2 bg-industrial-grey text-white text-xs font-black uppercase tracking-widest rounded-lg hover:bg-black transition-all">
                 Discuss this methodology
               </a>

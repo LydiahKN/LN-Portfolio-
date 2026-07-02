@@ -16,6 +16,7 @@ const searchIndex: SearchItem[] = [
   { id: '3', title: 'Predictive Demand Modeling', category: 'Projects', href: '/projects', icon: '📈' },
   { id: '4', title: 'Routing Optimization', category: 'Projects', href: '/projects', icon: '🚚' },
   { id: '5', title: 'Risk Contagion (SIS/SIR)', category: 'Projects', href: '/projects', icon: '🦠' },
+  { id: '10', title: 'Logistics Control Tower Dashboard', category: 'Projects', href: '/dashboard', icon: '📊' },
   { id: '6', title: 'Operations Research', category: 'Skills', href: '/skills', icon: '🧮' },
   { id: '7', title: 'Python & Data Science', category: 'Skills', href: '/skills', icon: '🐍' },
   { id: '8', title: 'ZAB Credentials', category: 'About', href: '/credentials', icon: '📜' },

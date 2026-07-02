@@ -5,6 +5,7 @@ export const translations: Record<string, Record<string, string>> = {
     "nav.projects": "Projekte",
     "nav.contact": "Kontakt",
     "nav.dossier": "Bewerbungsmappe",
+    "nav.dashboard": "Dashboard",
     "footer.location": "Standortstatus",
     "footer.based": "Basiert in Deutschland",
     "footer.hybrid": "Verfügbar für On-Site / Hybrid",

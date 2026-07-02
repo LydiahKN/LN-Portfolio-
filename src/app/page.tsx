@@ -28,15 +28,13 @@ export default function Home() {
   };
 
   const tools = [
-    { name: "Python", icon: <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M14.25.18l.9.2.73.26.59.3.45.32.34.34.25.34.16.33.1.3.04.26.02.2-.01.13V8.5h-6V10h10.75L24 10.75v1.25l-.1.3-.2.27-.3.2-.3.13h-2.9l-1.33 1.33-.06.12-.01.12v2.25l-.01.13-.03.12-.06.12-.07.1-.1.1-.12.06-.12.03-.13.01H15.5l-1.33 1.33-.06.12-.01.12v.67l-.01.13-.03.12-.06.12-.07.1-.1.1-.12.06-.12.03-.13.01H12l-1.33 1.33-.06.12-.01.12v.67l-.01.13-.03.12-.06.12-.07.1-.1.1-.12.06-.12.03-.13.01H8.5l-1.33 1.33-.06.12-.01.12v.67l-.01.13-.03.12-.06.12-.07.1-.1.1-.12.06-.12.03-.13.01H5l-1.33 1.33-.06.12-.01.12v.67l-.01.13-.03.12-.06.12-.07.1-.1.1-.12.06-.12.03-.13.01H1.5l-.13-.01-.12-.03-.12-.06-.1-.1-.07-.1-.06-.12-.03-.12-.01-.13V22.5l.01-.13.03-.12.06-.12.07-.1.1-.1.12-.06.12-.03.13-.01H5l1.33-1.33.06-.12.01-.12v-.67l.01-.13.03-.12.06-.12.07-.1.1-.1.12-.06.12-.03.13-.01h3.5l1.33-1.33.06-.12.01-.12v-.67l.01-.13.03-.12.06-.12.07-.1.1-.1.12-.06.12-.03.13-.01h3.5l1.33-1.33.06-.12.01-.12v-.67l.01-.13.03-.12.06-.12.07-.1.1-.1.12-.06.12-.03.13-.01h3.5l1.33-1.33.06-.12.01-.12v-.67l.01-.13.03-.12.06-.12.07-.1.1-.1.12-.06.12-.03.13-.01h3.5l1.33-1.33.06-.12.01-.12v-.67l.01-.13.03-.12.06-.12.07-.1.1-.1.12-.06.12-.03.13-.01h3.5l1.33-1.33.06-.12.01-.12v-6.5h-6V10h5.85l.12-.01.12-.03.12-.06.1-.1.07-.1.06-.12.03-.12.01-.13V5.5l-.01-.13-.03-.12-.06-.12-.07-.1-.1-.1-.12-.06-.12-.03-.13-.01h-3.5l-1.33-1.33-.06-.12-.01-.12v-.67l-.01-.13-.03-.12-.06-.12-.07-.1-.1-.1-.12-.06-.12-.03-.13-.01h-3.5l-1.33-1.33-.06-.12-.01-.12v-.67l-.01-.13-.03-.12-.06-.12-.07-.1-.1-.1-.12-.06-.12-.03-.13-.01h-3.5l-1.33-1.33-.06-.12-.01-.12V.18l.13.01.12.03.12.06.1.1.07.1.06.12.03.12.01.13v.67l.01.13.03.12.06.12.07.1.1.1.12.06.12.03.13.01h3.5l1.33 1.33.06.12.01.12v.67l.01.13.03.12.06.12.07.1.1.1.12.06.12.03.13.01h3.5l1.33 1.33.06.12.01.12v.67l.01.13.03.12.06.12.07.1.1.1.12.06.12.03.13.01H14.25z"/></svg> },
-    { name: "Power BI", icon: <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 24v-8h-4v8h4zm4 0v-12h-4v12h4zm4 0v-16h-4v16h4z"/></svg> },
+    { name: "Python", icon: <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M14.25.18l.9.2.73.26.59.3.45.32.34.34.25.34.16.33.1.3.04.26.02.2-.01.13V8.5h-6V10h10.75L24 10.75v1.25l-.1.3-.2.27-.3.2-.3.13h-2.9l-1.33 1.33-.06.12-.01.12v2.25l-.01.13-.03.12-.06.12-.07.1-.1.1-.12.06-.12.03-.13.01H15.5l-1.33 1.33-.06.12-.01.12v.67l-.01.13-.03.12-.06.12-.07.1-.1.1-.12.06-.12.03-.13.01H12l-1.33 1.33-.06.12-.01.12v.67l-.01.13-.03.12-.06.12-.07.1-.1.1-.12.06-.12.03-.13.01H8.5l-1.33 1.33-.06.12-.01.12v.67l-.01.13-.03.12-.06.12-.07.1-.1.1-.12.06-.12.03-.13.01H5l-1.33 1.33-.06.12-.01.12v.67l-.01.13-.03.12-.06.12-.07.1-.1.1-.12.06-.12.03-.13.01H1.5l-.13-.01-.12-.03-.12-.06-.1-.1-.07-.1-.06-.12-.03-.12-.01-.13V22.5l.01-.13.03-.12.06-.12.07-.1.1-.1.12-.06.12-.03.13-.01H5l1.33-1.33.06-.12.01-.12v-.67l.01-.13.03-.12.06-.12.07-.1.1-.1.12-.06.12-.03.13-.01h3.5l1.33-1.33.06-.12.01-.12v-.67l.01-.13.03-.12.06-.12.07-.1.1-.1.12-.06.12-.03.13-.01h3.5l1.33-1.33.06-.12.01-.12v-.67l.01-.13.03-.12.06-.12.07-.1.1-.1.12-.06.12-.03.13-.01h3.5l1.33-1.33.06-.12.01-.12v-.67l.01-.13.03-.12.06-.12.07-.1.1-.1.12-.06.12-.03.13-.01h3.5l1.33-1.33.06-.12.01-.12v-.67l.01-.13.03-.12.06-.12.07-.1.1-.1.12-.06.12-.03.13-.01h3.5l1.33-1.33.06-.12.01-.12v-6.5h-6V10h5.85l.12-.01.12-.03.12-.06.1-.1.07-.1.06-.12.03-.12.01-.13V5.5l-.01-.13-.03-.12-.06-.12-.07-.1-.1-.1-.12-.06-.12-.03-.13-.01h-3.5l-1.33-1.33-.06-.12-.01-.12v-.67l-.01-.13-.03-.12-.06-.12-.07-.1-.1-.1-.12-.06-.12-.03-.13-.01h-3.5l-1.33-1.33-.06-.12-.01-.12v-.67l-.01-.13-.03-.12-.06-.12-.07-.1-.1-.1-.12-.06-.12-.03-.13-.01h-3.5l-1.33-1.33-.06-.12-.01-.12V.18l.13.01.12.03.12.06.1.1.07.1.06.12.03.12.01.13v.67l.01.13.03.12.06.12.07.1.1.1.12.06.12.03.13.01h3.5l1.33 1.33.06.12.01.12v.67l.01.13.03.12.06.12.07.1.1.1.12.06.12.03.13.01h3.5l1.33 1.33.06.12.01.12v.67l.01.13.03.12.06.12.07.1.1.1.12.06.12.03.13.01H14.25z" /></svg> },
+    { name: "Power BI", icon: <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 24v-8h-4v8h4zm4 0v-12h-4v12h4zm4 0v-16h-4v16h4z" /></svg> },
     { name: "SQL", icon: <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" /></svg> },
-    { name: "SAP ERP", icon: <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg> },
-    { name: "Gurobi", icon: <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M12 2L2 7v10l10 5 10-5V7l-10-5zm0 18.18L4.5 15.5v-7L12 4.18l7.5 4.32v7L12 20.18z"/></svg> },
-    { name: "Tableau", icon: <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M10.5 13.5H13.5V10.5H10.5V13.5ZM10.5 17H13.5V14H10.5V17ZM10.5 10H13.5V7H10.5V10ZM7 13.5H10V10.5H7V13.5ZM14 13.5H17V10.5H14V13.5Z"/></svg> },
-    { name: "Git", icon: <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 11.25L12.75 3.5a1.5 1.5 0 00-2.1 0L9.4 4.75l2.1 2.1a1.5 1.5 0 11-2.1 2.1l-2.1-2.1L3.5 10.65a1.5 1.5 0 000 2.1l7.75 7.75a1.5 1.5 0 002.1 0l7.15-7.15a1.5 1.5 0 000-2.1z"/></svg> },
+    { name: "MS Office", icon: <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M11.4 2.4L2.5 3.8v7.6h8.9V2.4zm10.1-1.5L12.5 2.2v9.2h9V.9zm-10.1 11H2.5v7.6l8.9 1.4v-9zM12.5 12v9.2l9 1.4V12h-9z"/></svg> },
+    { name: "Git", icon: <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 11.25L12.75 3.5a1.5 1.5 0 00-2.1 0L9.4 4.75l2.1 2.1a1.5 1.5 0 11-2.1 2.1l-2.1-2.1L3.5 10.65a1.5 1.5 0 000 2.1l7.75 7.75a1.5 1.5 0 002.1 0l7.15-7.15a1.5 1.5 0 000-2.1z" /></svg> },
   ];
-  
+
   const scrollTools = [...tools, ...tools, ...tools, ...tools];
 
   const processSteps = [
@@ -48,7 +46,7 @@ export default function Home() {
 
   return (
     <div className="gradient-mesh min-h-screen pb-20">
-      
+
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, '\\u003c') }}
@@ -58,7 +56,7 @@ export default function Home() {
       <Reveal>
         <section className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <div className="flex flex-col md:flex-row items-center w-full gap-12">
-            
+
             <div className="md:w-3/5 flex flex-col justify-center">
               <div className="mb-6 inline-flex items-center space-x-2 bg-white/60 backdrop-blur-sm border border-gray-200 rounded-full px-4 py-1.5 w-fit shadow-sm">
                 <span className="flex h-2 w-2 rounded-full bg-green-500 animate-pulse"></span>
@@ -69,9 +67,9 @@ export default function Home() {
 
               <h1 className="text-5xl md:text-7xl font-extrabold text-industrial-grey tracking-tight mb-4 leading-tight">
                 <T id="hero.title.1">Logistics Data Analyst</T> <br />
-                <span className="text-gray-400 font-light"><T id="hero.title.2">& Operations Research</T></span>
+                <span className="text-gray-400 font-light"><T id="hero.title.2">& Research</T></span>
               </h1>
-              
+
               <p className="text-xl text-gray-600 max-w-3xl mb-8 leading-relaxed font-medium">
                 <T id="hero.subtitle">Leveraging advanced mathematical modeling and predictive analytics to drive supply chain efficiency, optimize routing, and mitigate disruption risks.</T>
               </p>
@@ -85,22 +83,18 @@ export default function Home() {
                 </a>
               </div>
 
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 py-8 border-t border-gray-200/50">
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-4 py-8 border-t border-gray-200/50">
                 <div className="flex flex-col">
-                  <span className="text-3xl font-black text-industrial-grey">1.0</span>
+                  <span className="text-4xl font-black bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent drop-shadow-sm">1.0</span>
                   <span className="text-[10px] font-black uppercase tracking-widest text-gray-400 mt-1">Grade Equiv.</span>
                 </div>
                 <div className="flex flex-col border-l border-gray-100 pl-4">
-                  <span className="text-3xl font-black text-industrial-grey">2</span>
-                  <span className="text-[10px] font-black uppercase tracking-widest text-gray-400 mt-1">ZAB Degrees</span>
+                  <span className="text-4xl font-black bg-gradient-to-r from-green-500 to-emerald-400 bg-clip-text text-transparent drop-shadow-sm">✓</span>
+                  <span className="text-[10px] font-black uppercase tracking-widest text-gray-400 mt-1">ZAB Verified (H+)</span>
                 </div>
                 <div className="flex flex-col border-l border-gray-100 pl-4">
-                  <span className="text-3xl font-black text-industrial-grey">C2</span>
+                  <span className="text-4xl font-black bg-gradient-to-r from-purple-500 to-pink-400 bg-clip-text text-transparent drop-shadow-sm">C2</span>
                   <span className="text-[10px] font-black uppercase tracking-widest text-gray-400 mt-1">English Prof.</span>
-                </div>
-                <div className="flex flex-col border-l border-gray-100 pl-4">
-                  <span className="text-3xl font-black text-iron-lemon">2026</span>
-                  <span className="text-[10px] font-black uppercase tracking-widest text-gray-400 mt-1">Market Ready</span>
                 </div>
               </div>
             </div>
@@ -118,12 +112,7 @@ export default function Home() {
         </section>
       </Reveal>
 
-      {/* 1.5 ZAB Showcase */}
-      <Reveal delay={200}>
-        <section className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-          <ZABShowcase />
-        </section>
-      </Reveal>
+
 
       {/* 2. Marquee */}
       <section className="relative z-10 py-10 bg-industrial-grey text-white overflow-hidden border-y-4 border-iron-lemon shadow-xl">
@@ -148,13 +137,13 @@ export default function Home() {
             <div className="h-1.5 w-16 bg-iron-lemon mx-auto mt-6 rounded-full"></div>
           </div>
         </Reveal>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {[
-            { year: "2024", title: "ZAB Master Equivalence", desc: "Statement of Comparability for Master of Science in Logistics.", link: "/credentials" },
-            { year: "2023", title: "Dean's List Award", desc: "Top 5% academic performance at Technical University of Mombasa.", link: "https://www.tum.ac.ke/" },
-            { year: "2022", title: "OR Research Lead", desc: "Led supply chain optimization research for Tier-1 distributors.", link: "/projects" },
-            { year: "2021", title: "B.Sc. Mathematics", desc: "First Class Honours equivalent (German 1.0).", link: "/credentials" },
+            { year: "2024", title: "DAX-Market Ready", desc: "ZAB statement of comparability secured for M.Sc. in Logistics.", link: "/credentials" },
+            { year: "2023", title: "Dean's List Scholar", desc: "Recognized for exceptional performance in advanced mathematics and statistical analysis.", link: "https://www.tum.ac.ke/" },
+            { year: "2022", title: "Supply Chain OR Lead", desc: "Spearheaded distribution network simulations for major logistics players.", link: "/projects" },
+            { year: "2021", title: "Quantitative Foundation", desc: "B.Sc. Mathematics with 1.0 German grade equivalent (First Class Honours).", link: "/credentials" },
           ].map((m, i) => (
             <Reveal key={i} delay={i * 100}>
               <Link href={m.link} className="group h-full flex flex-col p-6 bg-white border border-gray-100 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all border-b-4 border-b-gray-100 hover:border-b-iron-lemon overflow-hidden relative">
@@ -163,7 +152,7 @@ export default function Home() {
                 <h3 className="text-lg font-black text-industrial-grey mt-2 group-hover:text-black transition-colors relative z-10">{m.title}</h3>
                 <p className="text-xs text-gray-500 font-medium mt-2 leading-relaxed relative z-10">{m.desc}</p>
                 <div className="mt-auto pt-4 flex items-center text-[10px] font-black text-gray-300 group-hover:text-iron-lemon transition-colors relative z-10">
-                  VERIFIED STATUS <svg className="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
+                  VERIFIED STATUS <svg className="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" /></svg>
                 </div>
               </Link>
             </Reveal>
@@ -333,7 +322,7 @@ export default function Home() {
             <div className="h-1.5 w-16 bg-iron-lemon mx-auto mt-6 rounded-full"></div>
           </div>
         </Reveal>
-        
+
         <div className="grid lg:grid-cols-2 gap-12 items-start px-4">
           <Reveal delay={200}>
             <GradeConverter />
@@ -362,6 +351,6 @@ export default function Home() {
         </section>
       </Reveal>
 
-    </div>
+    </div >
   );
 }

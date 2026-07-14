@@ -4,9 +4,7 @@ import path from 'path';
 import { parse } from 'csv-parse/sync';
 
 const paths = [
-  path.join(process.cwd(), 'data', 'HLT Logistics Inventory - Goods Received.csv'),
-  path.join(process.cwd(), 'public', 'HLT Logistics Inventory - Goods Received.csv'),
-  path.join(process.cwd(), 'HLT Logistics Inventory - Goods Received.csv')
+  path.join(process.cwd(), 'data', 'LN Logistics Inventory - Goods Received.csv'),
 ];
 
 const escapeCSVField = (val: any) => {

@@ -20,7 +20,7 @@ export default function Dashboard() {
   const [search, setSearch] = useState('');
   const [statusFilter, setStatusFilter] = useState('All');
   const [loading, setLoading] = useState(true);
-  const [fileName, setFileName] = useState('HLT Logistics Default Set');
+  const [fileName, setFileName] = useState('LN Logistics Default Set');
   const [reportRange, setReportRange] = useState<'day' | 'week' | 'month' | null>(null);
   const [selectedDispatchRef, setSelectedDispatchRef] = useState('');
 
@@ -203,7 +203,7 @@ export default function Dashboard() {
     const url = URL.createObjectURL(blob);
     const link = document.createElement('a');
     link.setAttribute('href', url);
-    link.setAttribute('download', `HLT_Logistics_Inventory_Updated.csv`);
+    link.setAttribute('download', `LN_Logistics_Inventory_Updated.csv`);
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -245,7 +245,7 @@ export default function Dashboard() {
     <main className="p-8 max-w-7xl mx-auto space-y-8 bg-gray-50 min-h-screen font-sans">
       <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
         <div>
-          <h1 className="text-3xl font-bold text-gray-900 tracking-tight">HLT Logistics Control Tower</h1>
+          <h1 className="text-3xl font-bold text-gray-900 tracking-tight">LN Logistics Control Tower</h1>
           <p className="text-gray-500 mt-1">Active file: <span className="font-semibold text-gray-700">{fileName}</span></p>
         </div>
 
@@ -284,7 +284,7 @@ export default function Dashboard() {
                 Export CSV
               </button>
             </div>
-            <a href="/HLT Logistics Inventory - Goods Received.csv" download className="text-xs text-blue-500 hover:underline">Download Sample CSV</a>
+
           </div>
         </div>
       </div>
